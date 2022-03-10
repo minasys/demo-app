@@ -11,7 +11,7 @@ resources:
 # transformers:
 # - labels.yaml
 replicas:
-- count: 1
+- count: 3
   # name of deployment
   name: hello-eks-a
 ## if this image used, replace it with this tag
