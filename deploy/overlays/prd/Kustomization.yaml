@@ -3,16 +3,17 @@ kind: Kustomization
 metadata:
   name: demo-app-prd
 namespace: demo-app-prd
-nameSuffix: -prd
+# nameSuffix: -dev
 resources:
-- ../../bases/demo-app
+- deployment.yaml
+- service.yaml
 - namespace.yaml
 # transformers:
 # - labels.yaml
-replicas:
-- count: 3
-  # name of deployment
-  name: hello-eks-a
+# replicas:
+# - count: 3
+#   # name of deployment
+#   name: hello-eks-a
 ## if this image used, replace it with this tag
 # images:
 # - name: gbaeke/flux-rt
