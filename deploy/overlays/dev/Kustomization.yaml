@@ -5,8 +5,8 @@ metadata:
 namespace: demo-app-dev
 nameSuffix: -dev
 resources:
-- ../../bases/demo-app/deployment.yaml
-- ../../bases/demo-app/service.yaml
+- deployment.yaml
+- service.yaml
 - namespace.yaml
 # transformers:
 # - labels.yaml
